@@ -1,0 +1,62 @@
+h1{
+    color: #f35757;
+    text-align: center;
+}
+
+.campo-formulario{
+    display: block;
+    position: relative
+}
+
+.calculadora{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    height: 450px;
+}
+.cont-boton{
+ position: absolute;
+ top: 220px;
+ left: 510px;
+}
+.cont-boton-abajo{
+ position: absolute;
+ top: 275px;
+ left: 510px;
+}
+.cont-boton-result{
+ position: absolute;
+ top: 330px;
+ left: 510px;
+}
+
+/* Controla el tamaño de los botones */
+.boton-tam{
+   width: 50px;
+   height: 50px;
+   border-radius: 20%;
+   margin-right: 5px;
+}
+
+.boton-tamresult{
+   background-color: orange;
+   width: 50px;
+   height: 50px;
+   border-radius: 20%;
+   margin-right: 60px;
+}
+
+.pantalla-resultados{
+    position: absolute;
+    top: 115px;
+    left: 520px;
+    width: 245px;
+    height: 60px;
+    background-color: #cdf6c0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: right;
+    padding: 10px;
+    font-size: 30px;
+}

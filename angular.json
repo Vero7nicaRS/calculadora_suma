@@ -6,7 +6,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "calculadora_angular": {
+    "calculadora_suma": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -60,10 +60,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "calculadora_angular:build:production"
+              "buildTarget": "calculadora_suma:build:production"
             },
             "development": {
-              "buildTarget": "calculadora_angular:build:development"
+              "buildTarget": "calculadora_suma:build:development"
             }
           },
           "defaultConfiguration": "development"

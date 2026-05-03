@@ -4,18 +4,18 @@
         </div>
             <img src="calculadora_angular.png" alt="Calculadora Angular" class="calculadora">
         <div class= "cont-boton">
-            <button class ="boton-tam" (click)="almacenarNumero(1)">1</button>
-            <button class ="boton-tam" (click)="almacenarNumero(2)">2</button>
-            <button class ="boton-tam" (click)="almacenarNumero(3)">3</button>
-            <button class ="boton-tam" (click)="almacenarNumero(4)">4</button>
-            <button class ="boton-tam" (click)="almacenarNumero(5)">5</button>
+            @for (numero of numerosArriba; track numero){
+                <button class = "boton-tam" (click)="almacenarNumero(numero)">
+                    {{numero}}
+                </button>
+            }
         </div>
         <div class= "cont-boton-abajo">
-            <button class ="boton-tam" (click)="almacenarNumero(6)">6</button>
-            <button class ="boton-tam" (click)="almacenarNumero(7)">7</button>
-            <button class ="boton-tam" (click)="almacenarNumero(8)">8</button>
-            <button class ="boton-tam" (click)="almacenarNumero(9)">9</button>
-            <button class ="boton-tam" (click)="almacenarNumero(0)">0</button>
+            @for (numero of numerosAbajo; track numero){
+                <button class = "boton-tam" (click)="almacenarNumero(numero)">
+                    {{numero}}
+                </button>
+            }
         </div>
         <div class= "cont-boton-result">
             <button class ="boton-tamresult" (click) = "anyadirSuma('+')">+</button>

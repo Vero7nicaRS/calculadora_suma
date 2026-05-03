@@ -8,6 +8,9 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.css'
 })
 export class App {
+  numerosArriba = [1,2,3,4,5];
+  numerosAbajo = [6,7,8,9,0];
+
   numero1: number = 0;
   numero2: number = 0;
   
@@ -37,7 +40,7 @@ export class App {
     this.resultado = '';
     this.numero1 = 0;
     this.numero2 = 0;
-    console.log("Resetear calculadora... Valor: ",this.resultado, " Numeros... ", this.numero1, ", ", this.numero2);
+    //console.log("Resetear calculadora... Valor: ",this.resultado, " Numeros... ", this.numero1, ", ", this.numero2);
   }
 
   resultadoNumero(): void {
@@ -49,17 +52,17 @@ export class App {
       Ej: 598 + 67 =  ['598', '67'] --> [0]: '598'  ; [1]: '67
       */
       let resultado_split = this.resultado.split('+');
-      console.log("SPLIT: ", resultado_split);
+      // console.log("SPLIT: ", resultado_split);
 
       /* Si después del '+' hay valores, significa que se puede hacer la suma correctamente
          Ya que si no tiene un "+", no hará nada. */
       if(resultado_split[1] !== ''){
         this.numero1 = parseInt(resultado_split[0]);
         this.numero2 =  parseInt(resultado_split[1]);
-        console.log("N1: ", this.numero1, " + N2: ", this.numero2);
+        //console.log("N1: ", this.numero1, " + N2: ", this.numero2);
 
         this.resultado = (this.numero1 + this.numero2).toString();
-        console.log("Resultado: ", this.resultado);
+        //console.log("Resultado: ", this.resultado);
         // Se restaura el valor de los números.
         this.numero1 = 0;
         this.numero2 = 0;

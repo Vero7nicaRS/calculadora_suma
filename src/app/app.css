@@ -3,35 +3,46 @@ h1{
     text-align: center;
 }
 
-.campo-formulario{
-    display: block;
-    position: relative
+/*------------------------------- IMAGEN CALCULADORA -------------------------------*/
+/* Contenedor calculadora*/
+.contenedor-calculadora{
+    position: relative;
+    width: 350px;
+    height: 450px;
+    margin: 0 auto;
 }
 
 .calculadora{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
     width: 350px;
     height: 450px;
 }
+
+/* ------------------------------- BOTONES ------------------------------- */
+/* Cont-boton (botones superiores: 1-5)*/
 .cont-boton{
- position: absolute;
- top: 220px;
- left: 510px;
-}
-.cont-boton-abajo{
- position: absolute;
- top: 275px;
- left: 510px;
-}
-.cont-boton-result{
- position: absolute;
- top: 330px;
- left: 510px;
+    position: absolute;
+    top: 220px;
+    left: 40px;
 }
 
-/* Controla el tamaño de los botones */
+/* Cont-boton-abajo (botones medio: 6-0)*/
+.cont-boton-abajo{
+    position: absolute;
+    top: 275px;
+    left: 40px;
+}
+
+/* Cont-boton-result (botones superiores: "+", "=" y "C")*/
+.cont-boton-result{
+    position: absolute;
+    top: 330px;
+    left: 40px;
+    display: flex;
+    gap: 60px; 
+}
+
+/* Controla el tamaño de los botones: cont-boton y cont-boton-abajo */
 .boton-tam{
    width: 50px;
    height: 50px;
@@ -39,19 +50,21 @@ h1{
    margin-right: 5px;
 }
 
+/*Controla el tamaño de los botones: cont-boton-result*/ 
 .boton-tamresult{
    background-color: orange;
    width: 50px;
    height: 50px;
    border-radius: 20%;
-   margin-right: 60px;
 }
 
+/* ------------------------------- PANTALLA RESULTADOS -------------------------------*/
+/* Pantalla para mostrar los resultados de las operaciones*/
 .pantalla-resultados{
     position: absolute;
     top: 115px;
-    left: 520px;
-    width: 245px;
+    left: 57px;
+    width: 235px;
     height: 60px;
     background-color: #cdf6c0;
     border: 1px solid #ccc;
